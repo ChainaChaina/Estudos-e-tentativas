@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- Latest compiled and minified CSS -->
-    
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="style.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
- 
-    <title>Perfil</title>
-    <link rel="shortcut icon" type="image/icon" href="imagens/fim.ico">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <title>Perfil</title>
 </head>
 
-<body>
-  
+<body id="particles-js">
+  <nav class="navbar navbar-inverse navbar-china">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Lucas</a>
+      </div>
 
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
-<nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href=index.html>Lucas</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href=index.html>Resumo</a></li>
-            <li><a href=contato.html>Contato</a></li>
-            <li class=><a href=https://www.urionlinejudge.com.br/judge/pt/profile/327645>Uri online judge</a></li>
-            
-           
-          </ul>
-        </div>
-      </nav>
-            <div class="row">
-        <div class="col-lg-4">
-      <div class="container">
-        <br>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 600px; height: 600px;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -52,28 +62,28 @@
             <li data-target="#myCarousel" data-slide-to="2"></li>
             <li data-target="#myCarousel" data-slide-to="3"></li>
           </ol>
-      
+
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
-      
+
             <div class="item active">
-              <img src="imagens/foto1.jpg"  style="width:600px; height: 600px;">
+              <img class="fotinhas-china" src="imagens/foto1.jpg">
               <div class="carousel-caption">
                 <h3>Skate book</h3>
                 <p>Diversão Offline</p>
               </div>
             </div>
-      
+
             <div class="item">
-              <img src="imagens/foto2.jpg" style="width:600px; height: 600px;">
+              <img class="fotinhas-china" src="imagens/foto2.jpg">
               <div class="carousel-caption">
                 <h3>Broken Teeth</h3>
                 <p>Na entrevista conta a história disso</p>
               </div>
             </div>
-          
+
             <div class="item">
-              <img src="imagens/foto3.jpg" style="width:600px; height: 600px;">
+              <img class="fotinhas-china" src="imagens/foto3.jpg">
               <div class="carousel-caption">
                 <h3>Perfil</h3>
                 <p>Todo mundo tem uma selfie</p>
@@ -81,15 +91,15 @@
             </div>
 
             <div class="item">
-                    <img src="imagens/foto4.jpg"  style="width:600px; height: 600px;">
-                    <div class="carousel-caption">
-                      <h3>Windows 95</h3>
-                      <p>Diversão analógica</p>
-                    </div>
-                  </div>
-        
+              <img class="fotinhas-china" src="imagens/foto4.jpg">
+              <div class="carousel-caption">
+                <h3>Windows 95</h3>
+                <p>Diversão analógica</p>
+              </div>
+            </div>
+
           </div>
-      
+
           <!-- Left and right controls -->
           <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
@@ -101,27 +111,23 @@
           </a>
         </div>
       </div>
-        </div> 
-        <div class="col-lg-8" style="box-align: left: ;">
-           
-            <h1>Sobre Lucas, resumido:</h1>
-            <h2>Arranha em 5 instrumentos, toca violão até que muito bem.<br>
-                Já pintou, cozinhou, planejou, coordenou e hoje em dia tenta programar <br>
-                Estudante na <b>UFES</b>, já fez meio curso de arquitetura, já foi de garçom a chefe de marketing. <br>
-                Extrovertido, se acha eclético, Rpgs e cultura geek. bebe 5L de agua por dia.
-<br><br>
-            </h2>
-            <div class="row-lg"> 
-                    <div class="thumbnail">
-                            <a href="https://github.com/ChainaChaina">
-                              <img src="imagens/git.png" alt="Lights" style="width:75%">
-                             
-                            </a>
-            </div>
 
+      <div class="col-xs-12 col-md-8 descricao">
+        <h1>Sobre Lucas, resumido:</h1>
+        <h2>Arranha em 5 instrumentos, toca violão até que muito bem.<br>
+          Já pintou, cozinhou, planejou, coordenou e hoje em dia tenta programar <br>
+          Estudante na <b>UFES</b>, já fez meio curso de arquitetura, já foi de garçom a chefe de marketing. <br>
+          Extrovertido, se acha eclético, Rpgs e cultura geek. bebe 5L de agua por dia.
+          <br><br>
+        </h2>
+        <div class="thumbnail">
+          <a href="https://github.com/ChainaChaina">
+            <img src="imagens/git.png" alt="Lights">
+          </a>
         </div>
+      </div>
     </div>
-  
-    
+  </div>
 </body>
+
 </html>
